@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const express = require('express');
 const dotenv = require('dotenv');
+const Event = require('./models/Event'); // Import the Event model
 
 // Load environment variables from .env file
 dotenv.config();
@@ -27,4 +28,14 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 // Define a simple route
 app.get('/', (req, res) => {
   res.send('Hello, world!');
+});
+
+// API endpoint to fetch events
+app.get('/api/events', async (req, res) => {
+  try {
+    const events = await Event.find();
+    res.json(events);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
 });
