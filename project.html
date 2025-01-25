@@ -18,7 +18,6 @@
         </nav>
         <div class="profile-btn">
             <img src="images/dp.jpeg" alt="Profile" class="profile-img">
-            
         </div>
     </header>
 
@@ -32,19 +31,19 @@
 
     <!-- Events Section -->
     <section id="events" class="events-section">
-        <div class="section-header">
+        <div class="filter-container">
             <h2>Upcoming Events</h2>
             <div class="filter-buttons">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Workshops</button>
-                <button class="filter-btn">Meetups</button>
-                <button class="filter-btn">Online</button>
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="workshop">Workshops</button>
+                <button class="filter-btn" data-filter="meetup">Meetups</button>
+                <button class="filter-btn" data-filter="online">Online</button>
             </div>
         </div>
 
         <div class="events-grid">
             <!-- Event Card 1 -->
-            <div class="event-card">
+            <div class="event-card" data-category="workshop">
                 <div class="event-image">
                     <img src="images/one.jpeg" alt="Tourism Day">
                     <span class="event-tag">Workshop</span>
@@ -65,7 +64,7 @@
             </div>
 
             <!-- Event Card 2 -->
-            <div class="event-card">
+            <div class="event-card" data-category="meetup">
                 <div class="event-image">
                     <img src="images/four.jpeg" alt="Business Networking">
                     <span class="event-tag">Meetup</span>
@@ -86,7 +85,7 @@
             </div>
 
             <!-- Event Card 3 -->
-            <div class="event-card">
+            <div class="event-card" data-category="workshop">
                 <div class="event-image">
                     <img src="images/three.jpeg" alt="Push Boundaries">
                     <span class="event-tag">Workshop</span>
@@ -105,84 +104,69 @@
                     <button class="view-more-btn">View Details</button>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Call to Action Section -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>Ready to Start Your Journey?</h2>
-            <p>Join our community and unlock endless opportunities</p>
-            <div class="cta-buttons">
-                </button>
-                <button class="btn-share">
-                    <i class="fas fa-share-alt"></i>
-                    Share Your Skills
-                </button>
+            <!-- Event Card 4 -->
+            <div class="event-card" data-category="online">
+                <div class="event-image">
+                    <img src="images/five.jpeg" alt="Tech Innovations">
+                    <span class="event-tag">Online</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">
+                        <i class="far fa-calendar"></i>
+                        May 30, 2024
+                    </div>
+                    <h3>Tech Innovations 2024</h3>
+                    <p>Join industry experts as they discuss the latest trends and advancements in technology. Stay ahead of the curve!</p>
+                    <div class="event-details">
+                        <span><i class="far fa-clock"></i> 5:00 PM - 7:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Virtual</span>
+                    </div>
+                    <button class="view-more-btn">View Details</button>
+                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">EmpowerHER</div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+            <!-- Event Card 5 -->
+            <div class="event-card" data-category="meetup">
+                <div class="event-image">
+                    <img src="images/six.jpeg" alt="Creative Minds Meetup">
+                    <span class="event-tag">Meetup</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">
+                        <i class="far fa-calendar"></i>
+                        June 5, 2024
+                    </div>
+                    <h3>Creative Minds Meetup</h3>
+                    <p>Collaborate with artists, writers, and designers to spark creativity and share ideas at this in-person meetup.</p>
+                    <div class="event-details">
+                        <span><i class="far fa-clock"></i> 4:00 PM - 6:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Community Hall</span>
+                    </div>
+                    <button class="view-more-btn">View Details</button>
+                </div>
             </div>
-            <p>&copy; 2024 EmpowerHER. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EmpowerHER - Connect, Learn & Share</title>
-    <link rel="stylesheet" href="styless.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header class="header">
-        <div class="logo">EmpowerHER</div>
-        <nav class="nav-links">
-            <a href="#events" class="active">Events</a>
-            <a href="#learn">Learn</a>
-            
-        </nav>
-        <div class="profile-btn">
-            <img src="images/dp.jpeg" alt="Profile" class="profile-img">
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Welcome to EmpowerHER</h1>
-            <p>A community platform for women to connect, learn, and grow together</p>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="events-section">
-        <div class="section-header">
-            <h2>Upcoming Events</h2>
-            <div class="filter-buttons">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Workshops</button>
-                <button class="filter-btn">Meetups</button>
-                <button class="filter-btn">Online</button>
+            <!-- Event Card 6 -->
+            <div class="event-card" data-category="online">
+                <div class="event-image">
+                    <img src="images/seven.jpeg" alt="Startup Essentials">
+                    <span class="event-tag">Online</span>
+                </div>
+                <div class="event-content">
+                    <div class="event-date">
+                        <i class="far fa-calendar"></i>
+                        June 10, 2024
+                    </div>
+                    <h3>Startup Essentials</h3>
+                    <p>Learn the key steps to launch your own startup with this comprehensive and interactive workshop for entrepreneurs.</p>
+                    <div class="event-details">
+                        <span><i class="far fa-clock"></i> 1:00 PM - 3:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Innovation Hub</span>
+                    </div>
+                    <button class="view-more-btn">View Details</button>
+                </div>
             </div>
-        </div>
-
-        <div class="events-grid" id="events-grid">
-            <!-- Event cards will be inserted here by JavaScript -->
         </div>
     </section>
 
@@ -215,40 +199,27 @@
     </footer>
 
     <script>
-        async function fetchEvents() {
-            const response = await fetch('/api/events');
-            const events = await response.json();
-            const eventsGrid = document.getElementById('events-grid');
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const eventCards = document.querySelectorAll('.event-card');
 
-            events.forEach(event => {
-                const eventCard = document.createElement('div');
-                eventCard.classList.add('event-card');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const filter = button.getAttribute('data-filter');
 
-                eventCard.innerHTML = `
-                    <div class="event-image">
-                        <img src="${event.image}" alt="${event.title}">
-                        <span class="event-tag">${event.tag}</span>
-                    </div>
-                    <div class="event-content">
-                        <div class="event-date">
-                            <i class="far fa-calendar"></i>
-                            ${event.date}
-                        </div>
-                        <h3>${event.title}</h3>
-                        <p>${event.description}</p>
-                        <div class="event-details">
-                            <span><i class="far fa-clock"></i> ${event.time}</span>
-                            <span><i class="fas fa-map-marker-alt"></i> ${event.location}</span>
-                        </div>
-                        <button class="view-more-btn">View Details</button>
-                    </div>
-                `;
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
 
-                eventsGrid.appendChild(eventCard);
+                    eventCards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
             });
-        }
-
-        fetchEvents();
+        });
     </script>
 </body>
 </html>
