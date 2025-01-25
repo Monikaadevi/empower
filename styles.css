@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    background-color: #0f0b09de;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+/* Main Stories Container */
+.stories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+}
+
+/* Individual Story Cards */
+.story-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.story-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.story-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #000203f8;
+}
+
+.story-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #ff8c42;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
