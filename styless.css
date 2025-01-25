@@ -9,11 +9,11 @@
 body {
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-        url('assets/moni.jpg');
+        url('images/bg.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #fff;
+    color: #fffffffa;
 }
 
 /* Header Styles */
