@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 const dotenv = require('dotenv');
 const Event = require('./models/Event'); // Import the Event model
-const Event = require('./models/Event'); // Import the Event model
 
 // Load environment variables from .env file
 dotenv.config();
